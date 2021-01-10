@@ -39,3 +39,11 @@
 .cover-cta .button {
     margin: 0 0.5rem;
 }
+
+.site-svg-logo{
+    width:6.4em;
+    height:6.4em;
+    display:block;
+    fill:black;
+    margin-bottom: 2rem;
+}
