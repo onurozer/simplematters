@@ -43,19 +43,18 @@
                 {{#is "post"}}
                     {{#unless @member}}
                         <section class="single-cta">
-                            <h2 class="single-cta-title">Enjoying these posts? Subscribe for more</h2>
-                            <button class="button single-cta-button" data-portal="signup">Subscribe now</button>
+                            <h2 class="single-cta-title">Subscribe to {{@site.title}}</h2>                            
+                            <p>Get new articles in your inbox. No spam, no fluff.</p>
+                            <button class="button single-cta-button" data-portal="signup/free">Subscribe now</button>
+                            {{!-- 
                             <br>
-                            <button class="button-text single-cta-footer" data-portal="signin">Already have an account? Sign in</button>
+                            <button class="button-text single-cta-footer" data-portal="signin">Already have an account? Log in</button>
+                            --}}
                         </section>
                     {{/unless}}
                 {{/is}}
             {{else}}
-                <p>
-                    You don't have access to this post at the moment,
-                    but if you upgrade your account you'll be able to see the whole thing,
-                    as well as all the other posts in the archive! Subscribing will give you immediate access.
-                </p>
+
                 <section class="single-cta">
                     {{#has visibility="paid"}}
                         <h2 class="single-cta-title">This post is for paying subscribers only</h2>
@@ -65,11 +64,13 @@
 
                     {{#if @member}}
                         {{#unless @member.paid}}
+                            <p>Upgrade now and get instant access to all articles on {{@site.title}}.</p>
                             <button class="button single-cta-button" data-portal="account/plans">Upgrade now</button>
                         {{/unless}}
                     {{else}}
-                        <button class="button single-cta-button" data-portal="signup">Subscribe now</button>
-                        <br>
+                        <p>Sign up now and get instant access to all articles on {{@site.title}}.</p>
+                        <button class="button single-cta-button" data-portal="signup/free">Subscribe now</button>
+<br />
                         <button class="button-text single-cta-footer" data-portal="signin">Already have an account? Sign in</button>
                     {{/if}}
                 </section>
