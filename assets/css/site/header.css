@@ -28,9 +28,11 @@
 }
 
 .logo-text {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     font-size: 1.8rem;
-    font-weight: 800;
+    font-weight: 700;
+    font-family: var(--font-title);
+    letter-spacing: var(--title-letter-spacing);
 }
 
 .logo-image {

@@ -25,7 +25,9 @@
     margin-bottom: 0;
     font-size: 4rem;
     line-height: 1.2;
-    letter-spacing: -0.1rem;
+    font-family: var(--font-title);
+    letter-spacing: var(--title-letter-spacing);
+    font-weight:700;
 }
 
 .single-excerpt {
