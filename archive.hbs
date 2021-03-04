@@ -1,0 +1,16 @@
+{{!< default}} <div class="content-area">
+  <main class="site-main">
+    <article>
+      <header class="single-header">
+        <h1 class="single-title">Articles</h1>
+      </header>
+      <div class="post-feed container medium">
+        {{#get "posts"}}
+        {{#foreach posts visibility="all"}}
+        {{> "loop"}}
+        {{/foreach}}
+        {{/get}}
+      </div>
+    </article>
+  </main>
+  </div>
