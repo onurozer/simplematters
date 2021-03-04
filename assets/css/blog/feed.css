@@ -71,6 +71,10 @@
     display: none;
 }
 
+.featured .feed-visibility-public {
+    display: block;
+}
+
 .feed-length {
     color: var(--secondary-text-color);
     font-size: 1.4rem;
