@@ -41,14 +41,14 @@
 
 .single-cta {
     margin-top: 4rem !important;
-    padding: 3rem;
+    padding: 3rem 0;
     border-top: 5px solid var(--brand-color);
-    border-bottom: 1px solid var(--light-gray-color);
+//    border-bottom: 1px solid var(--light-gray-color);
     text-align: center;
 }
 
 .single-cta-title {
-    margin: 0 0 3rem !important;
+    margin: 0 0 2rem !important;
 }
 
 .single-cta-button {
@@ -61,6 +61,16 @@
     font-weight: 400 !important;
     letter-spacing: -0.02rem;
 }
+
+.single-cta-subscription-form-input{
+    padding: 0 15px;    
+    height: 36px;
+    border-radius: 3px;
+    appearance: none;
+    vertical-align:bottom;
+    width:55%;
+}
+
 
 .single-footer {
     display: flex;
