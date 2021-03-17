@@ -36,7 +36,6 @@
         {{/if}}
     </header>
     <div class="single-content kg-canvas u-text-format">
-        {{#if @labs.members}}
         {{#if access}}
         {{content}}
         {{#is "post"}}
@@ -93,6 +92,7 @@
             {{else}}
             <h2 class="single-cta-title">This post is for subscribers only</h2>
             {{/has}}
+
             {{#if @member}}
             {{#unless @member.paid}}
             <p>Upgrade now and get instant access to all articles on {{@site.title}}.</p>
@@ -105,9 +105,6 @@
             <button class="button-text single-cta-footer" data-portal="signin">Already have an account? Sign in</button>
             {{/if}}
         </section>
-        {{/if}}
-        {{else}}
-        {{content}}
         {{/if}}
     </div>
     {{!--
