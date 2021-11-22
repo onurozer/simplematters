@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{meta_title}}</title>
     <link rel="stylesheet" href="{{asset 'built/screen.css'}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Poppins:wght@700;800&display=swap">
 
     <script>
         var siteUrl = '{{@site.url}}';
+        {{#if @custom.content_api_key_for_search}}
+            var gh_search_key = '{{@custom.content_api_key_for_search}}';
+        {{/if}}
     </script>
 
     <script>

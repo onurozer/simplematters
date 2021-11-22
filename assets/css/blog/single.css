@@ -27,12 +27,20 @@
     line-height: 1.2;
     font-family: var(--font-title);
     letter-spacing: var(--title-letter-spacing);
-    font-weight:700;
+    font-weight: 700;
+}
+
+.has-serif-title .single-title {
+    font-family: var(--font-serif);
 }
 
 .single-excerpt {
     margin-top: 2rem;
     font-size: 2.4rem;
+}
+
+.has-serif-body .single-excerpt {
+    font-family: var(--font-serif);
 }
 
 .single-media {
@@ -43,7 +51,7 @@
     margin-top: 4rem !important;
     padding: 3rem 0;
     border-top: 5px solid var(--brand-color);
-//    border-bottom: 1px solid var(--light-gray-color);
+    //    border-bottom: 1px solid var(--light-gray-color);
     text-align: center;
 }
 
@@ -62,15 +70,14 @@
     letter-spacing: -0.02rem;
 }
 
-.single-cta-subscription-form-input{
-    padding: 0 15px;    
+.single-cta-subscription-form-input {
+    padding: 0 15px;
     height: 36px;
     border-radius: 3px;
     appearance: none;
-    vertical-align:bottom;
-    width:55%;
+    vertical-align: bottom;
+    width: 55%;
 }
-
 
 .single-footer {
     display: flex;
