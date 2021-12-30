@@ -29,7 +29,7 @@
 }
 
 .feed-calendar {
-    display: flex;
+    display: none;
     margin-right: 1.5rem;
     min-width: 45px;
     color: var(--brand-color);

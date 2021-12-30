@@ -11,7 +11,11 @@
     text-transform: uppercase;
 }
 
-.single-meta-item + .single-meta-item::before {
+.single-meta-date {
+    display: none;
+}
+
+.single-meta-tag::before {
     content: "\02022";
     padding: 0 0.3rem;
     font-family: serif;
